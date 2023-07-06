@@ -622,7 +622,51 @@ header nav ul li:hover{
         transform: translateX(0.7rem);
     }
 }
+.dowloand{
+    display: flex;
+}
+.dowloand a{
+    margin-right: 1.5rem;
+}
 
+/* slider */
+
+.slider{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 3.5rem;
+    background-color: var(--color-alternativo4);
+
+}
+.slide-track{
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px*16);
+    align-items: center;
+}
+
+.slider .slide{
+    width: 200px;
+
+}
+.slider .slide img{
+    width: 100%;
+}
+
+@keyframes scroll {
+    0%{
+        -webkit-transform:translate(0) ;
+        transform: translatex(0);
+    }
+    100%{
+        -webkit-transform:translate(calc(-200px*8));
+        transform: translate(calc(-200px*8));
+    }
+
+}
 
 
 /* diseño responsivo  */
@@ -719,7 +763,8 @@ header nav ul li:hover{
     }
     .imageart1{
         position: absolute;
-        top: 130rem;
+        top: 129rem;
+        height: 2rem;
     }
     .imageart2{
         position: absolute;
@@ -796,13 +841,26 @@ header nav ul li:hover{
     }
     .infoskills p{
         font-size: 1.2rem;
-        width: 95%;
+        width: 90%;
     }
     .infoskills h2{
         font-size: 2.2rem;
     }
     .infoskills h5{
         font-size: 1.5rem;
+    }
+    .imageart3{
+        position: absolute;
+        top:22rem;
+        height:15rem;
+        left: 7rem;
+        z-index:-1 ;
+    }
+    .imageart4{
+        position: absolute;
+        top: 19.2rem;
+        left: 9rem;
+        height: 2rem;
     }
 
 
