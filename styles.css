@@ -531,7 +531,7 @@ header nav ul li:hover{
     justify-content: center;
     align-items: center;
     color: var(--color-2);
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 600;
 }
 .skills div p{
@@ -637,7 +637,7 @@ header nav ul li:hover{
     margin: auto;
     overflow: hidden;
     margin-top: 3.5rem;
-    background-color: var(--color-alternativo4);
+    background-color: #c1cdd42c;
 
 }
 .slide-track{
@@ -666,6 +666,69 @@ header nav ul li:hover{
         transform: translate(calc(-200px*8));
     }
 
+}
+.form{
+    background-color: var(--color-alyernative5);
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin: auto;
+}
+
+.form_container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.form_tittle{
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+.form_input{
+    font-family: var(--font-style-major);
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 1.5rem;
+    border: 1px solid  var(--color-3);
+    text-align-last: auto;
+
+}
+
+
+
+.form_input--message{
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+}
+
+.form_cta{
+    font-family: var(--font-style-major);
+    font-weight: 600;
+    background-color: var(--color-4);
+    color: var(--color-2);
+    border: none;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding: .7em 0em;
+    border-radius: .2em;
+    cursor: pointer;
+}
+
+.formtext{
+    text-align: center;
+}
+.formtext h5{
+    font-size: 1.5rem;
+}
+.formtext h2{
+    font-size:3rem;
 }
 
 

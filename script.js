@@ -22,6 +22,13 @@ const windowBackgroun3 = document.querySelector('#windowBackground3'),
 popUp3 = document.querySelector('#popup3'),
 linkInfo3 = document.querySelector('#linkarticle3'),
 buttonClosePopUp3 = document.querySelector('#icon-x3')
+const windowBackgroun4 = document.querySelector('#windowBackground4'),
+popUp4 = document.querySelector('#popup4'),
+linkInfo4 = document.querySelector('#linkarticle4'),
+buttonClosePopUp4 = document.querySelector('#icon-x4')
+
+
+
 
 
 //eventos
