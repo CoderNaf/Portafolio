@@ -44,11 +44,19 @@ header{
     justify-content: space-around;
     margin-top: 1.2rem;
     background-color: transparent;
+    position: fixed;
+    top: -1.2rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 13%;
+    z-index: 10;
+    background-color: var(--color-alternativo3);
 }
 
 .logo{
     display: flex;
-    height: 80px;
+    height: 70px;
 }
 
 header nav ul{
@@ -61,10 +69,28 @@ header nav ul{
     font-size: 1.2rem;
 }
 
-header nav ul li:hover{
+header nav ul a{
+    color: var(--color-1);
+    cursor: pointer;
+}
+header nav ul a:hover{
     color: var(--color-alternativo2);
     cursor: pointer;
 }
+
+/* navegacion del menu */
+
+html{
+    scroll-behavior: smooth;
+}
+
+#seccionDos{
+    scroll-margin-top: 2rem;
+}
+#seccionTres{
+    scroll-margin-top: 5rem;
+}
+
 
 .button-header{
     text-transform: capitalize;
@@ -96,10 +122,14 @@ header nav ul li:hover{
 .article-header{
     display: grid;
     grid-template-columns: repeat(2, minmax(min(350px,100%),1fr));
+    position: relative;
+    top:3rem;
     gap:10px;
     padding: 4rem 0rem;
     width: 100%;
+    height: 80vh;
     align-items: center;
+
 }
 
 .article-header a{

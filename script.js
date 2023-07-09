@@ -26,6 +26,7 @@ const windowBackgroun4 = document.querySelector('#windowBackground4'),
 popUp4 = document.querySelector('#popup4'),
 linkInfo4 = document.querySelector('#linkarticle4'),
 buttonClosePopUp4 = document.querySelector('#icon-x4')
+const myWork = document.querySelector('#myWork')
 
 
 
@@ -37,6 +38,7 @@ buttonsMenu.addEventListener('click', toggleActive1);
 services.addEventListener('click', toggleActive2);
 portfolio.addEventListener('click', toggleActive3);
 aboutMe.addEventListener('click', toggleActive4);
+myWork.addEventListener('click', Work);
 
 // popUps
 
@@ -90,10 +92,6 @@ const clouseWindow3 = ()=>{
 
 }
 
-
-
-
-
 //funciones
 
 function toggleActive1 (){
@@ -128,5 +126,12 @@ function toggleActive4 (){
     buttonsMenu.classList.remove('active')
     services.classList.remove('active')
     portfolio.classList.remove('active')
+  }
+}
+function Work (){
+  var seccion = document.getElementById('seccionTres')
+
+  if (seccion) {
+    seccion.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
