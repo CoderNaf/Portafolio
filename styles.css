@@ -228,7 +228,7 @@ html{
     position: absolute;
     right: 36rem;
     top: 30rem;
-    z-index: 1;
+    z-index: -1;
     animation: complement1 ease-in-out 1s infinite alternate;
 }
 
@@ -244,7 +244,7 @@ html{
     position: absolute;
     right: 15rem;
     top:15rem;
-    z-index: 1;
+    z-index: -1;
     animation: complement2 ease-in-out 1s infinite alternate ;
 }
 
@@ -830,14 +830,14 @@ html{
         top:18rem;
         right: 20rem;
         height: 30px;
-        z-index: 2;
+        z-index: 1;
     }
     .image-complement2{
         position: absolute;
         top:10rem;
         right: 7rem;
         height: 30px;
-        z-index: 2;
+        z-index: 1;
     }
     .two-section{
         justify-content: center;
@@ -852,6 +852,9 @@ html{
         font-size: 1.5rem;
         max-width: 50%;
         padding: 0;
+    }
+    .link-articles{
+        width:40%;
     }
     .imageart1{
         position: absolute;
