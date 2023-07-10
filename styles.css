@@ -13,9 +13,7 @@
     --color-alyernative5:#ffff;
     
 }
-/* cursor{
-    cur
-} */
+
 
 .active{
     color: var(--color-alternativo2);
@@ -399,6 +397,7 @@ html{
     text-decoration: underline;
     text-transform: capitalize;
     color: var(--color-alternativo2);
+    width: 20%;
 }
 
 /* pop-up services info */
