@@ -27,6 +27,13 @@ popUp4 = document.querySelector('#popup4'),
 linkInfo4 = document.querySelector('#linkarticle4'),
 buttonClosePopUp4 = document.querySelector('#icon-x4')
 const myWork = document.querySelector('#myWork')
+const menuMobile = document.querySelector('.menuM')
+const buttonMenuMobile = document.querySelector('#menuMovileB')
+const buttonMobile1 = document.querySelector('.button-menu-mobile1')
+const buttonMobile2 = document.querySelector('.button-menu-mobile2')
+const buttonMobile3 = document.querySelector('.button-menu-mobile3')
+const buttonMobile4 = document.querySelector('.button-menu-mobile4')
+const myWorkMobile = document.querySelector('#myWorkMobile')
 
 
 
@@ -135,3 +142,74 @@ function Work (){
     seccion.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
+
+
+
+// programacion de menu mobil
+buttonMenuMobile.addEventListener('click', ()=>{
+  menuMobile.classList.toggle('inactive')
+})
+
+buttonMobile2.addEventListener('click', () =>{
+  buttonMobile2.classList.add('activeMenu')
+  menuMobile.classList.add('inactive')
+  let work2 = document.getElementById('seccionDos')
+  if(work2){
+    work2.scrollIntoView({behavior: "smooth", block: "start"});
+  }
+  if(buttonMobile2){
+    buttonMobile1.classList.remove('activeMenu')
+    buttonMobile3.classList.remove('activeMenu')
+    buttonMobile4.classList.remove('activeMenu')
+  }
+})
+
+buttonMobile3.addEventListener('click', () =>{
+  buttonMobile3.classList.add('activeMenu')
+  menuMobile.classList.add('inactive')
+  let work3 = document.getElementById('seccionTres')
+  if(work3){
+    work3.scrollIntoView({behavior: "smooth", block: "start"});
+  }
+  if(buttonMobile3){
+    buttonMobile2.classList.remove('activeMenu')
+    buttonMobile1.classList.remove('activeMenu')
+    buttonMobile4.classList.remove('activeMenu')
+
+
+  }
+})
+
+buttonMobile4.addEventListener('click', () =>{
+  buttonMobile4.classList.add('activeMenu')
+  menuMobile.classList.add('inactive')
+  let work3 = document.getElementById('seccionTres')
+  if(work3){
+    work3.scrollIntoView({behavior: "smooth", block: "start"});
+  }
+  if(buttonMobile4){
+    buttonMobile2.classList.remove('activeMenu')
+    buttonMobile1.classList.remove('activeMenu')
+    buttonMobile3.classList.remove('activeMenu')
+  }
+})
+buttonMobile1.addEventListener('click', () =>{
+  buttonMobile1.classList.add('activeMenu')
+  menuMobile.classList.add('inactive')
+  let work1 = document.getElementById('seccionUno')
+  if(work1){
+    work1.scrollIntoView({behavior: "smooth", block: "start"});
+  }
+  if(buttonMobile1){
+    buttonMobile2.classList.remove('activeMenu')
+    buttonMobile3.classList.remove('activeMenu')
+    buttonMobile4.classList.remove('activeMenu')
+  }
+})
+
+myWorkMobile.addEventListener('click', ()=> {
+  let work5 = document.getElementById('seccionTres');
+  if(work5){
+    work5.scrollIntoView({behavior: 'smooth', block:'start'})
+  }
+})
