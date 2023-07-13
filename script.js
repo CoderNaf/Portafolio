@@ -5,7 +5,6 @@ new kursor({
 
 // variables 
 
-
 const buttonsMenu= document.querySelector ('.buttons-menu')
 const services= document.querySelector ('.services')
 const portfolio = document.querySelector ('.portfolio')
@@ -22,10 +21,6 @@ const windowBackgroun3 = document.querySelector('#windowBackground3'),
 popUp3 = document.querySelector('#popup3'),
 linkInfo3 = document.querySelector('#linkarticle3'),
 buttonClosePopUp3 = document.querySelector('#icon-x3')
-const windowBackgroun4 = document.querySelector('#windowBackground4'),
-popUp4 = document.querySelector('#popup4'),
-linkInfo4 = document.querySelector('#linkarticle4'),
-buttonClosePopUp4 = document.querySelector('#icon-x4')
 const myWork = document.querySelector('#myWork')
 const menuMobile = document.querySelector('.menuM')
 const buttonMenuMobile = document.querySelector('#menuMovileB')
@@ -34,9 +29,9 @@ const buttonMobile2 = document.querySelector('.button-menu-mobile2')
 const buttonMobile3 = document.querySelector('.button-menu-mobile3')
 const buttonMobile4 = document.querySelector('.button-menu-mobile4')
 const myWorkMobile = document.querySelector('#myWorkMobile')
-
-
-
+const contactome1 = document.querySelector('#contactar1')
+const contactome2 = document.querySelector('#contactar2')
+const contactome3 = document.querySelector('.contactar3')
 
 
 //eventos
@@ -46,6 +41,9 @@ services.addEventListener('click', toggleActive2);
 portfolio.addEventListener('click', toggleActive3);
 aboutMe.addEventListener('click', toggleActive4);
 myWork.addEventListener('click', Work);
+contactome1.addEventListener('click', mensajeDeWhatsApp)
+contactome2.addEventListener('click', mensajeDeWhatsApp)
+contactome3.addEventListener('click', mensajeDeWhatsApp)
 
 // popUps
 
@@ -213,3 +211,18 @@ myWorkMobile.addEventListener('click', ()=> {
     work5.scrollIntoView({behavior: 'smooth', block:'start'})
   }
 })
+
+// contacto 
+
+function mensajeDeWhatsApp (){
+  const mensaje = 'Hola soy fabian Silva ¿como te puedo ayudar?'
+  const numeroDeTelefono = '573043171488'
+  const enlace = "http://wa.me/" + numeroDeTelefono + "?text=" + encodeURIComponent(mensaje)
+  window.open(enlace)
+  if(contactome1){
+    menuMobile.classList.add('inactive')
+    const home = document.querySelector('#seccionUno')
+    home.scrollIntoView({behavior: 'smooth'})
+  }
+}
+
